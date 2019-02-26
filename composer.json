@@ -1,0 +1,27 @@
+{
+    "name": "lansingred/lastviewedforumpageoffset",
+    "type": "phpbb-extension",
+    "description": "Add forum page offset(start) to the url of the navigation links. So when you go from forum_page->topic_page->forum_page, you don't have to start from page 1 again",
+    "homepage": "",
+    "version": "1.0.0",
+    "time": "2019-02-26",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "lansingred",
+            "email": "",
+            "homepage": "",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Remember Last Viewed Forum Page Offset",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,<3.3.0@dev"
+        }
+    }
+}

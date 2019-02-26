@@ -1,0 +1,23 @@
+services:
+    lansingred.lastviewedforumpageoffset.controller.ucp:
+        class: lansingred\lastviewedforumpageoffset\controller\ucp_controller
+        arguments:
+            - '@config'
+            - '@dbal.conn'
+            - '@language'
+            - '@request'
+            - '@template'
+            - '@user'
+
+    lansingred.lastviewedforumpageoffset.listener:
+        class: lansingred\lastviewedforumpageoffset\event\main_listener
+        arguments:
+            - '@config'
+            - '@controller.helper'
+            - '@template'
+            - '@language'
+            - '@user'
+            - '@dbal.conn'
+            - '@request'
+        tags:
+            - { name: event.listener }
